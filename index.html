@@ -1,0 +1,65 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+
+<body>
+  <div id="game">
+  <div id="board">
+    <div id="colors" class="colors">
+      <div id="green" onClick="addColorToPlayer(this.id)"></div>
+      <div id="red" onClick="addColorToPlayer(this.id)"></div>
+      <div id="yellow" onClick="addColorToPlayer(this.id)"></div>
+      <div id="blue" onClick="addColorToPlayer(this.id)"></div>
+    </div>
+    <div class="controls center">
+      <h3>Simon</h3>
+      <!-- Switch -->
+      <div id="buttons" class="row">
+        <div class="col s6">
+          <button id="start" class="z-depth-1"></button>
+        </div>
+        <!-- gameplay mode -->
+        <div class="col s6">
+          <div class="switch">
+            <label>
+              <input type="checkbox" id="strict">
+              <span class="lever"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 labels">
+          <p>START</p>
+        </div>
+        <div class="col s6 labels">
+          <p id="strict-label">STRICT</p>
+        </div>
+      </div>
+      <div class="count">
+        <h5 id="count-num">--</h5>
+      </div>
+    </div>
+  </div>
+  <div id="final-screen" class="hidden">
+    <div id="msg"></div>
+    <br>
+    <a href="#" id="new-game">Play Again</a>
+  </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p class="center">Created with <i class="fa fa-heart" style="color: #FF5252"></i> by <a href="https://github.com/bethqiang">Beth Qiang</a></p>
+</footer>

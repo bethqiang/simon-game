@@ -1,0 +1,154 @@
+body {
+  font-family: Muli, sans-serif;
+}
+
+#board {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.20), 0 7.5px 6px rgba(0,0,0,0.12);
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+#green,
+#red,
+#yellow,
+#blue {
+  width: 155px;
+  height: 155px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.12),inset 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#green:hover,
+#red:hover,
+#yellow:hover,
+#blue:hover {
+  opacity: 0.8;
+  box-shadow: inset 0 10px 20px rgba(0,0,0,0.25), inset 0 5px 5px rgba(0,0,0,0.22);
+}
+
+#green {
+  background-color: #00C853;
+  border-radius: 200px 0 0 0;
+  margin: 30px 15px 30px 30px;
+}
+
+#red {
+  background-color: #F44336;
+  border-radius: 0 200px 0 0;
+  margin: 30px 30px 30px 15px;
+}
+
+#yellow {
+  background-color: #FFEB3B;
+  border-radius: 0 0 0 200px;
+  margin: 0 15px 30px 30px;
+}
+
+#blue {
+  background-color: #03A9F4;
+  border-radius: 0 0 200px 0;
+  margin: 0 30px 30px 15px;
+}
+
+.controls {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  border: 20px solid #000000;
+  border-radius: 50%;
+  top: 90px;
+  right: 90px;
+  background-color: #D8D8D8;
+}
+
+h3 {
+  margin-top: 30px !important;
+}
+
+#buttons {
+  margin-top: -10px;
+}
+
+.labels {
+  margin-top: -34px;
+}
+
+button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #00C853;
+  margin: -3px auto 7px auto;
+}
+
+button:focus {
+  background-color: #00C853;
+}
+
+#strict-label {
+  margin-top: 8px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.count {
+  width: 60px;
+  height: 35px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: -24px auto 0 auto !important;
+  color: #F44336;
+  background-color: #000000;
+}
+
+.count > h5 {
+  margin-top: 3.5px;
+}
+
+.animate {
+  opacity: 0.8;
+  box-shadow: inset 0 10px 20px rgba(0,0,0,0.25), inset 0 5px 5px rgba(0,0,0,0.22) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+#final-screen {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 190px;
+}
+
+#msg,
+#new-game {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#new-game {
+  color: #03A9F4;
+}
+
+#footer {
+   position:fixed;
+   left: 0px;
+   bottom: 0px;
+   height: 30px;
+   width: 100%;
+}
